@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Veterinaria | CatDog</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mx-auto text-center">
+            <img src="assets/img/header-1.png" alt="animales" class="img-fluid">
+            <h2 class="my-3">¡Bienvenido a <strong>Veterinaria Catdog</strong>!</h2>
+            <h5>A continuación, encontrarás el formulario de inscripción. Rellena todos los datos para que tu mascota quede registrada en nuestra base de datos 🐾</h5>
+        </div>
+        <hr>
+        <form id="formulario" class="p-4">
+            <div class="form-group">
+                <label for="propietario" class="mt-2 ml-2"><strong>DUEÑO:</strong> </label>
+                <input type="text" class="form-control" id="propietario" aria-describedby="textoAyuda" placeholder="Por ejemplo: Dorian Delgado Quito">
+                <small id="textoAyuda" class="form-text">Nunca compartiremos tus datos.</small>
+            </div>
+            <div class="form-group">
+                <label for="telefono"><strong>NÚMERO TELEFÓNICO:</strong></label>
+                <input type="text" class="form-control" id="telefono" placeholder="Por ejemplo: +56 9 7707 1707">
+            </div>
+            <div class="form-group">
+                <label for="direccion"><strong>LUGAR DE RESIDENCIA:</strong></label>
+                <input type="text" class="form-control" id="direccion" placeholder="Por ejemplo: Las Palmeras 3507, Iquique">
+            </div>
+            <div class="form-group">
+                <label for="nombreMascota"><strong>NOMBRE DE LA MASCOTA:</strong></label>
+                <input type="text" class="form-control" id="nombreMascota" placeholder="Por ejemplo: Lumina">
+            </div>
+            <div class="form-group">
+                <label for="tipo"><strong>TIPO</strong></label>
+                <select class="form-control" id="tipo">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Conejo">Conejo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="enfermedad"><strong>MOTIVO DE LA CONSULTA:</strong></label>
+                <input type="text" class="form-control" id="enfermedad" placeholder="Por ejemplo: Dolor estomacal">
+            </div>
+            <button type="submit" class="btn button-color">Agregar</button>
+        </form>
+        <hr>
+        <div class="text-center mt-5">
+            <h5><strong>Datos Agregados</strong></h5>
+            <div id="resultado">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Own Js File-->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

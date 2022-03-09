@@ -1,0 +1,17 @@
+body {
+    background-color: #98DDBC;
+    font-family: 'Chelsea Market', cursive;
+    font-family: 'Patrick Hand', cursive;
+}
+hr {
+    height: 7px;
+    background-color: #1D5847;
+}
+form {
+    background-color: #1D5847;
+    color: #F6F0FA;
+}
+.button-color {
+    background-color: #53C688;
+    color: #1D5847;
+}
